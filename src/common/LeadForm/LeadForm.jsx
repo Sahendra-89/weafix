@@ -141,7 +141,7 @@ export default function LeadForm({ onClose }) {
 
       {step === 1 && (
         <>
-          <h3 className="lf-title">What type of Altera Interior?</h3>
+          <h3 className="lf-title">What type of WEAFIX STUDIOS?</h3>
           <p className="lf-subtitle">Select your design requirement</p>
           <div className="lf-bhk-grid">
             {BHK_OPTIONS.map((opt) => (
@@ -172,7 +172,7 @@ export default function LeadForm({ onClose }) {
 
       {step === 2 && (
         <>
-          <h3 className="lf-title">Which Altera Interior services?</h3>
+          <h3 className="lf-title">Which WEAFIX STUDIOS services?</h3>
           <p className="lf-subtitle">Select all that apply</p>
           <div className="lf-rooms-list">
             {ROOM_OPTIONS.map((room) => (

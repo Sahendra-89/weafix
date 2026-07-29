@@ -7,13 +7,25 @@ const OFFER_CARDS = [
     icon: "🛠️",
     title: "Our Services",
     items: [
-      "Modular kitchens",
-      "Modular wardrobes",
-      "Furniture ",
-      "Study Tables",
-      "Vanity",
-      "Modular door with modular frame",
-      "Crockery unit",
+      "Complete Home Interior Solutions",
+      "Full Home Renovation",
+      "Residential & Commercial Interiors",
+      "Construction Services",
+      "Modular Kitchen Design & Installation",
+      "Custom Wardrobes & Storage Solutions",
+      "Living Room & Bedroom Interiors",
+      "TV Units & Wall Paneling",
+      "False Ceiling & Lighting Solutions",
+      "Woodwork & Carpentry",
+      "Flooring & Wall Finishes",
+      "Painting & Decorative Finishes",
+      "Electrical & Plumbing Works",
+      "Turnkey Interior Projects",
+      "Civil & Structural Work",
+      "Space Planning & 3D Design",
+      "Factory-Made Customized Furniture",
+      "Complete In-House Manufacturing",
+      "Site Execution & Project Management",
     ],
   },
   {
@@ -88,7 +100,7 @@ export default function WhatWeOffer({ onQuoteOpen }) {
         <div>
           <h2 className="wwo-title">What We Offer</h2>
           <p className="wwo-sub">
-            Everything you need for your perfect Altera Interior — under one
+            Everything you need for your perfect WEAFIX STUDIOS — under one
             roof
           </p>
         </div>

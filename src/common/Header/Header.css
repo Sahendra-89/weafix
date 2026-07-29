@@ -42,9 +42,9 @@
 }
 
 .header-logo img {
-  height: 64px;
+  height: 90px; object-fit: contain; border-radius: 4px;
   width: auto;
-  mix-blend-mode: multiply;
+  
 }
 
 .header-logo-text {
@@ -65,7 +65,7 @@
   margin-bottom: 2px;
 }
 
-.brand-altera {
+.brand-weafix {
   color: #a82424; /* deep red */
   font-weight: 600;
   letter-spacing: 0.5px;

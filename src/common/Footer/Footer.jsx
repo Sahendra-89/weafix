@@ -11,13 +11,12 @@ const NAV_LINKS = [
 ];
 
 const SERVICES = [
-  "Modular kitchen",
-  "Modular wardrobes",
-  "Furniture",
-  "Vanity",
-  "Study table",
-  "Modular door with modular frames",
-  "Crockery unit",
+  "Complete Home Interior Solutions",
+  "Full Home Renovation",
+  "Residential & Commercial Interiors",
+  "Construction Services",
+  "Modular Kitchen Design & Installation",
+  "Custom Wardrobes & Storage Solutions",
 ];
 
 export default function Footer({ onQuoteOpen }) {
@@ -31,11 +30,7 @@ export default function Footer({ onQuoteOpen }) {
           {/* Brand */}
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
-              <img
-                src="/assets/logo/altera-logo.png"
-                alt="Altera Interior"
-                style={{ height: "60px" }}
-              />
+              <img src="/assets/logo/logo.png?v=2" alt="WEAFIX STUDIOS" />
             </Link>
             <p className="footer-tagline">
               Crafting extraordinary living spaces with precision, passion, and
@@ -43,7 +38,7 @@ export default function Footer({ onQuoteOpen }) {
             </p>
             <div className="footer-social" aria-label="Social media links">
               <a
-                href="https://www.instagram.com/alterainterior?igsh=MW95cHdtOTVraXZ1Zg%3D%3D&utm_source=qr"
+                href="https://www.instagram.com/weafixinterior?igsh=MW95cHdtOTVraXZ1Zg%3D%3D&utm_source=qr"
                 className="social-link"
                 aria-label="Instagram"
                 target="_blank"
@@ -139,24 +134,21 @@ export default function Footer({ onQuoteOpen }) {
             <div className="footer-contact-item">
               <span className="footer-contact-icon">📍</span>
               <span className="footer-contact-text">
-                Plot No.16/2,Dhnawahpur village,Behind Ats Triputi Tower, Dawrka
-                Expresway, Sector - 104,
+                Q3, Vir Nagar Sector 8 Gurgaon, 122001, Haryana
                 <br />
-                <br />
-                Gurugram (HR) - 122006
               </span>
             </div>
             <div className="footer-contact-item">
               <span className="footer-contact-icon">📞</span>
               <span className="footer-contact-text">
-                <a href="tel:+919876543210">+91 9718374407, +91 9650136952</a>
+                <a href="tel:+919811178178">+91 98111 78178</a>
               </span>
             </div>
             <div className="footer-contact-item">
               <span className="footer-contact-icon">✉️</span>
               <span className="footer-contact-text">
-                <a href="mailto:alterakitcheninterior@gmail.com">
-                  alterakitcheninterior@gmail.com
+                <a href="mailto:info@weafixstudios.com">
+                  info@weafixstudios.com
                 </a>
               </span>
             </div>
@@ -177,7 +169,7 @@ export default function Footer({ onQuoteOpen }) {
           }}
         >
           <p className="footer-copyright">
-            © {year} Altera Interior. All rights reserved.
+            © {year} WEAFIX STUDIOS. All rights reserved.
           </p>
           <div className="footer-bottom-links">
             <a href="#">Privacy Policy</a>

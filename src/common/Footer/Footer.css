@@ -36,8 +36,8 @@
 }
 
 .footer-brand .footer-logo img {
-  height: 100px;
-  mix-blend-mode: multiply;
+  height: 140px; object-fit: contain; border-radius: 4px;
+  
 }
 
 .footer-tagline {

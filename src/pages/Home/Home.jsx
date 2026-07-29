@@ -137,7 +137,7 @@ export default function Home({ onQuoteOpen }) {
         <div className="hero-image-panel">
           <img
             src="/assets/hero-living-room.jpg"
-            alt="Beautifully designed natural living room interior by Altera Interior"
+            alt="Beautifully designed natural living room interior by WEAFIX STUDIOS"
             loading="eager"
           />
           {/* Floating Lead Form */}
@@ -182,7 +182,7 @@ export default function Home({ onQuoteOpen }) {
               }}
             >
               <h2 className="text-section-title" style={{ marginBottom: 0 }}>
-                Altera Interiors for Every Budget
+                WEAFIX STUDIOS for Every Budget
               </h2>
               <Button
                 variant="primary"
@@ -200,7 +200,7 @@ export default function Home({ onQuoteOpen }) {
               }}
             >
               Our designers work with your requirements and budget to create the
-              perfect Altera Interior.
+              perfect WEAFIX STUDIOS.
             </p>
           </div>
           <BudgetCarousel />
@@ -265,7 +265,7 @@ export default function Home({ onQuoteOpen }) {
                 Crafting Spaces with <em>Soul</em>
               </h2>
               <p>
-                Founded in 2016, Altera Interior was born from a simple belief:
+                Founded in 2016, WEAFIX STUDIOS was born from a simple belief:
                 every space has the potential to be extraordinary. We are a
                 boutique studio of passionate designers, artisans, and project
                 managers dedicated to translating your vision into reality.
@@ -310,14 +310,14 @@ export default function Home({ onQuoteOpen }) {
         <div className="container">
           <div className="section-header">
             <span className="text-overline">
-              Altera Interior Price Estimator
+              WEAFIX STUDIOS Price Estimator
             </span>
             <h2 className="text-section-title">
-              Calculate Your Altera Interior Cost
+              Calculate Your WEAFIX STUDIOS Cost
             </h2>
             <div className="section-divider" />
             <p>
-              Select your Altera Interior type, kitchen & design quality to get
+              Select your WEAFIX STUDIOS type, kitchen & design quality to get
               an approximate cost estimate instantly.
             </p>
           </div>

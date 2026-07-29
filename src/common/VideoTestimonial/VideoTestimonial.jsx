@@ -7,7 +7,7 @@ const TESTIMONIALS = [
     name: "Priya & Rahul Sharma",
     location: "Gurgaon, Delhi NCR",
     quote:
-      '"The Altera team transformed our home into a dream space. The project manager was proactive, communication was excellent, and every detail was completed on time. The quality of work exceeded our expectations, and the entire experience was smooth from start to finish. Highly recommended!"',
+      '"The Weafix team transformed our home into a dream space. The project manager was proactive, communication was excellent, and every detail was completed on time. The quality of work exceeded our expectations, and the entire experience was smooth from start to finish. Highly recommended!"',
     bg: "linear-gradient(135deg, #7A9E84 0%, #4A6B55 100%)",
     avatar: "👩‍👨",
   },
@@ -16,7 +16,7 @@ const TESTIMONIALS = [
     name: "Ananya Krishnan",
     location: "Bangalore, Karnataka",
     quote:
-      '"I was skeptical about online interior design, but Altera Interior exceeded every expectation. The 3D renders matched the final outcome perfectly!"',
+      '"I was skeptical about online interior design, but WEAFIX STUDIOS exceeded every expectation. The 3D renders matched the final outcome perfectly!"',
     bg: "linear-gradient(135deg, #A08060 0%, #6A5540 100%)",
     avatar: "👩",
   },

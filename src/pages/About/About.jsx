@@ -5,9 +5,9 @@ import "../Services/Services.css";
 
 const TEAM = [
   {
-    name: "Aryan Altera",
+    name: "Aryan Weafix",
     role: "Founder & Creative Director",
-    bio: "With 15 years of international design experience, Aryan founded Altera Interior to bring world-class luxury design to Indian homes.",
+    bio: "With 15 years of international design experience, Aryan founded WEAFIX STUDIOS to bring world-class luxury design to Indian homes.",
     color: "#2C3B4A",
     initials: "AA",
   },
@@ -86,7 +86,7 @@ export default function About({ onQuoteOpen }) {
             className="text-overline"
             style={{ marginBottom: "var(--space-4)", display: "block" }}
           >
-            About Altera Interior
+            About WEAFIX STUDIOS
           </span>
           <h1 className="text-section-title">
             A Studio Built on
@@ -145,7 +145,7 @@ export default function About({ onQuoteOpen }) {
                 className="text-body"
                 style={{ marginBottom: "var(--space-4)" }}
               >
-                Altera Interior was founded with a vision to create thoughtfully
+                WEAFIX STUDIOS was founded with a vision to create thoughtfully
                 designed spaces that combine functionality, comfort, and
                 timeless aesthetics. Starting from Gurugram, Haryana, we have
                 grown into a trusted interior design studio, delivering premium

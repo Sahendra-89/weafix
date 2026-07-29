@@ -39,9 +39,9 @@ export default function Header({ onQuoteOpen }) {
           <Link
             to="/"
             className="header-logo"
-            aria-label="Altera Interior - Home"
+            aria-label="WEAFIX STUDIOS - Home"
           >
-            <img src="/assets/logo/altera-logo.png" alt="Altera Interior" style={{ height: "45px" }} />
+            <img src="/assets/logo/logo.png?v=2" alt="WEAFIX STUDIOS" />
           </Link>
 
           {/* Desktop Nav */}

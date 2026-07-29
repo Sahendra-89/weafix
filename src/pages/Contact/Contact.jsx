@@ -95,9 +95,8 @@ export default function Contact() {
                         lineHeight: "var(--leading-relaxed)",
                       }}
                     >
-                      Behind Ats Triputi Tower, Dawrka Expresway, Sector - 104,
+                      Q3, Vir Nagar Sector 8 Gurgaon, 122001, Haryana
                       <br />
-                      HARYANA, Gurugram (HR) - 122006
                     </p>
                   </div>
                 </div>
@@ -107,7 +106,7 @@ export default function Contact() {
                   <div>
                     <p style={{ fontWeight: 500, marginBottom: 2 }}>Phone</p>
                     <a href="tel:+919876543210" className="contact-link">
-                      +91 9718374407, +91 9650136952
+                      +91 98111 78178
                     </a>
                   </div>
                 </div>
@@ -117,10 +116,10 @@ export default function Contact() {
                   <div>
                     <p style={{ fontWeight: 500, marginBottom: 2 }}>Email</p>
                     <a
-                      href="mailto:hello@alterainterior.com"
+                      href="mailto:info@weafixstudios.com"
                       className="contact-link"
                     >
-                      alterakitcheninterior@gmail.com
+                      info@weafixstudios.com
                     </a>
                   </div>
                 </div>
@@ -149,7 +148,7 @@ export default function Contact() {
               {/* Map */}
               <div className="contact-map">
                 <iframe
-                  title="Altera Interior Studio Map Location"
+                  title="WEAFIX STUDIOS Studio Map Location"
                   src="https://maps.google.com/maps?q=Behind%20Ats%20Triputi%20Tower%2C%20Dawrka%20Expresway%2C%20Sector%20-%20104%2C%20Gurugram%20Haryana&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
@@ -168,9 +167,9 @@ export default function Contact() {
                   <span style={{ fontSize: "3rem" }}>✨</span>
                   <h3>Message Received!</h3>
                   <p>
-                    Thank you for reaching out to Altera Interior. We'll get
-                    back to you within 24 hours to discuss how we can help
-                    transform your space.
+                    Thank you for reaching out to WEAFIX STUDIOS. We'll get back
+                    to you within 24 hours to discuss how we can help transform
+                    your space.
                   </p>
                   <Button
                     variant="secondary"
