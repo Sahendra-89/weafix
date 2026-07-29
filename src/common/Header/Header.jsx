@@ -41,7 +41,7 @@ export default function Header({ onQuoteOpen }) {
             className="header-logo"
             aria-label="WEAFIX STUDIOS - Home"
           >
-            <h2 style={{ margin: 0, color: "var(--color-primary)" }}>WEAFIX STUDIOS</h2>
+            <img src="/assets/logo/logo.png?v=3" alt="WEAFIX STUDIOS" />
           </Link>
 
           {/* Desktop Nav */}
