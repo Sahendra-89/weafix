@@ -14,11 +14,11 @@
   --color-border-strong: rgba(120, 100, 70, 0.35);
 
   /* ---- Sage Accent ---- */
-  --color-sage:          #5C7A65;
-  --color-sage-light:    #7A9E84;
-  --color-sage-dark:     #3D5445;
-  --color-sage-muted:    rgba(92, 122, 101, 0.12);
-  --color-sage-bg:       rgba(92, 122, 101, 0.08);
+  --color-sage:          #A08060;
+  --color-sage-light:    #C9A980;
+  --color-sage-dark:     #7A6040;
+  --color-sage-muted:    rgba(160, 128, 96, 0.12);
+  --color-sage-bg:       rgba(160, 128, 96, 0.08);
 
   /* ---- Warm Tan ---- */
   --color-tan:           #A08060;
