@@ -3,36 +3,8 @@ import Button from "../../common/Button/Button";
 import "./About.css";
 import "../Services/Services.css";
 
-const TEAM = [
-  {
-    name: "Aryan Weafix",
-    role: "Founder & Creative Director",
-    bio: "With 15 years of international design experience, Aryan founded WEAFIX STUDIOS to bring world-class luxury design to Indian homes.",
-    color: "#2C3B4A",
-    initials: "AA",
-  },
-  {
-    name: "Meera Krishnan",
-    role: "Head of Residential Design",
-    bio: "A graduate of NID Ahmedabad with a Master\u2019s from the \u00c9cole nationale sup\u00e9rieure des Arts D\u00e9coratifs, Paris.",
-    color: "#3A3228",
-    initials: "MK",
-  },
-  {
-    name: "Rohit Agarwal",
-    role: "Commercial Design Lead",
-    bio: "Rohit brings 10 years of expertise in hospitality and corporate design, having led projects across Asia and the Middle East.",
-    color: "#2A342C",
-    initials: "RA",
-  },
-  {
-    name: "Sanya Patel",
-    role: "Senior Interior Stylist",
-    bio: "A trained stylist and furniture curator, Sanya sources bespoke pieces from across India, Italy, and Scandinavia.",
-    color: "#1E2830",
-    initials: "SP",
-  },
-];
+
+
 
 const VALUES = [
   {
@@ -229,39 +201,7 @@ export default function About({ onQuoteOpen }) {
         </div>
       </section>
 
-      {/* ---- Team ---- */}
-      <section className="section about-team-section">
-        <div className="container">
-          <div className="section-header">
-            <span className="text-overline">The Makers</span>
-            <h2 className="text-section-title">Meet Our Team</h2>
-            <div className="section-divider" />
-            <p>
-              A team of passionate designers united by an obsession with
-              beautiful, functional spaces.
-            </p>
-          </div>
-          <div className="team-grid">
-            {TEAM.map(({ name, role, bio, color, initials }) => (
-              <div key={name} className="team-card">
-                <div className="team-avatar" style={{ background: color }}>
-                  <span className="team-initials">{initials}</span>
-                </div>
-                <h5
-                  style={{
-                    marginBottom: "var(--space-1)",
-                    fontSize: "var(--text-xl)",
-                  }}
-                >
-                  {name}
-                </h5>
-                <p className="team-role">{role}</p>
-                <p className="team-bio">{bio}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* ---- Awards ---- */}
       <section className="section about-awards-section">

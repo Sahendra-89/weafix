@@ -2,29 +2,24 @@ import { useState } from "react";
 import portfolioData from "../../data/portfolio.json";
 import "./Portfolio.css";
 
-const CATEGORIES = [
-  "All",
-  "Living Room",
-  "Bedroom",
-  "Kitchen",
-  "Office",
-  "Bathroom",
-  "Commercial",
-];
-
 export default function Portfolio() {
   const [active, setActive] = useState("All");
   const [lightbox, setLightbox] = useState(null);
 
-  const filtered =
-    active === "All"
-      ? portfolioData
-      : portfolioData.filter((p) => p.category === active);
+  const filtered = portfolioData;
 
   return (
     <main className="page-wrapper">
       {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero" style={{
+        backgroundImage: `linear-gradient(rgba(17, 17, 17, 0.3), rgba(17, 17, 17, 0.7)), url('/assets/portfolio/project-1.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        paddingTop: 'calc(var(--header-height) + var(--space-20))',
+        paddingBottom: 'var(--space-20)',
+        borderBottom: '1px solid var(--color-border)',
+        textShadow: '0 2px 10px rgba(0,0,0,0.8)'
+      }}>
         <div className="container">
           <span
             className="text-overline"
@@ -52,24 +47,10 @@ export default function Portfolio() {
       {/* Filter & Grid */}
       <section className="section">
         <div className="container">
-          {/* Filters */}
-          <div className="portfolio-filters">
-            {CATEGORIES.map((cat) => (
-              <button
-                key={cat}
-                className={`filter-btn${active === cat ? " active" : ""}`}
-                onClick={() => setActive(cat)}
-                id={`portfolio-filter-${cat.toLowerCase().replace(/\s+/g, "-")}`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-
           {/* Count */}
           <p className="portfolio-count">
-            Showing <span>{filtered.length}</span> project
-            {filtered.length !== 1 ? "s" : ""}
+            Showing <span>{portfolioData.length}</span> project
+            {portfolioData.length !== 1 ? "s" : ""}
           </p>
 
           {/* Grid */}
@@ -99,25 +80,7 @@ export default function Portfolio() {
                   }
                 />
                 <div className="portfolio-card-overlay">
-                  <div className="portfolio-card-top">
-                    <span className="portfolio-card-cat">
-                      {project.category}
-                    </span>
-                    <span className="portfolio-card-year">{project.year}</span>
-                  </div>
-                  <div className="portfolio-card-bottom">
-                    <h4 className="portfolio-card-title">{project.title}</h4>
-                    <p className="portfolio-card-location">
-                      📍 {project.location}
-                    </p>
-                    <div className="portfolio-card-tags">
-                      {project.tags.slice(0, 2).map((tag) => (
-                        <span key={tag} className="portfolio-tag">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                  {/* Text on images has been removed per request */}
                 </div>
               </div>
             ))}

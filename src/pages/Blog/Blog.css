@@ -89,7 +89,7 @@
 }
 
 .featured-title {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl));
   font-weight: 700;
   line-height: var(--leading-snug);
@@ -226,7 +226,7 @@
 }
 
 .blog-card-title {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-size: var(--text-xl);
   font-weight: 600;
   line-height: var(--leading-snug);

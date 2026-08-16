@@ -28,14 +28,27 @@ export default function Blog() {
 
   const featured = blogPosts.find(p => p.featured);
 
-  const formatDate = (d) => new Date(d).toLocaleDateString('en-IN', {
-    day: 'numeric', month: 'long', year: 'numeric'
-  });
+  const formatDate = (d) => {
+    if (!d) return null;
+    const date = new Date(d);
+    if (isNaN(date.getTime())) return null;
+    return date.toLocaleDateString('en-IN', {
+      day: 'numeric', month: 'long', year: 'numeric'
+    });
+  };
 
   return (
     <main className="page-wrapper">
       {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero" style={{
+        backgroundImage: `linear-gradient(rgba(17, 17, 17, 0.3), rgba(17, 17, 17, 0.7)), url('/assets/portfolio/project-8.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        paddingTop: 'calc(var(--header-height) + var(--space-20))',
+        paddingBottom: 'var(--space-20)',
+        borderBottom: '1px solid var(--color-border)',
+        textShadow: '0 2px 10px rgba(0,0,0,0.8)'
+      }}>
         <div className="container">
           <span className="text-overline" style={{ display: 'block', marginBottom: 'var(--space-4)' }}>Design Journal</span>
           <h1 className="text-section-title">Stories, Ideas &<br /><em style={{ fontStyle: 'italic', color: 'var(--color-gold)' }}>Inspiration</em></h1>
@@ -61,7 +74,9 @@ export default function Blog() {
               <div className="featured-post-content">
                 <div className="featured-meta">
                   <span className="blog-cat-badge">{featured.category}</span>
-                  <span className="blog-date">{formatDate(featured.date)}</span>
+                  {formatDate(featured.date) && (
+                    <span className="blog-date">{formatDate(featured.date)}</span>
+                  )}
                   <span className="blog-read">⏱ {featured.readingTime}</span>
                 </div>
                 <h2 className="featured-title">{featured.title}</h2>
@@ -122,7 +137,9 @@ export default function Blog() {
                   <div className="blog-card-body">
                     <div className="blog-card-meta">
                       <span className="blog-cat-badge">{post.category}</span>
-                      <span className="blog-date">{formatDate(post.date)}</span>
+                      {formatDate(post.date) && (
+                        <span className="blog-date">{formatDate(post.date)}</span>
+                      )}
                     </div>
                     <h3 className="blog-card-title">{post.title}</h3>
                     <p className="blog-card-excerpt">{post.excerpt}</p>

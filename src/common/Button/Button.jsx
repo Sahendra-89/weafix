@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import './Button.css';
+import { Link } from "react-router-dom";
+import "./Button.css";
 
 /**
  * Button Component
@@ -11,22 +11,24 @@ import './Button.css';
  */
 export default function Button({
   children,
-  variant = 'primary',
-  size = '',
+  variant = "primary",
+  size = "",
   to,
   href,
   arrow = false,
-  className = '',
+  className = "",
   loading = false,
   ...props
 }) {
   const classes = [
-    'btn',
+    "btn",
     `btn-${variant}`,
-    size ? `btn-${size}` : '',
-    loading ? 'btn-loading' : '',
+    size ? `btn-${size}` : "",
+    loading ? "btn-loading" : "",
     className,
-  ].filter(Boolean).join(' ');
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   const content = (
     <>
@@ -36,11 +38,25 @@ export default function Button({
   );
 
   if (to) {
-    return <Link to={to} className={classes} {...props}>{content}</Link>;
+    return (
+      <Link to={to} className={classes} {...props}>
+        {content}
+      </Link>
+    );
   }
 
   if (href) {
-    return <a href={href} className={classes} target="_blank" rel="noopener noreferrer" {...props}>{content}</a>;
+    return (
+      <a
+        href={href}
+        className={classes}
+        target="_blank"
+        rel="noopener noreferrer"
+        {...props}
+      >
+        {content}
+      </a>
+    );
   }
 
   return (

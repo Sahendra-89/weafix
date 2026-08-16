@@ -1,6 +1,6 @@
 import "./WhatsAppCTA.css";
 
-const WHATSAPP_NUMBER = "+91 98111 78178";
+const WHATSAPP_NUMBER = "919811178178";
 const WHATSAPP_MSG = encodeURIComponent(
   "Hello WEAFIX STUDIOS! I'm interested in your interior design services. Could you please share more details?",
 );

@@ -5,7 +5,6 @@ import TestimonialSlider from "../../common/TestimonialSlider/TestimonialSlider"
 import LeadForm from "../../common/LeadForm/LeadForm";
 import TrustStrip from "../../common/TrustStrip/TrustStrip";
 import BudgetCarousel from "../../common/BudgetCarousel/BudgetCarousel";
-import PriceEstimator from "../../common/PriceEstimator/PriceEstimator";
 import VideoTestimonial from "../../common/VideoTestimonial/VideoTestimonial";
 import WhatWeOffer from "../../common/WhatWeOffer/WhatWeOffer";
 import portfolioData from "../../data/portfolio.json";
@@ -101,7 +100,6 @@ const FEATURED = portfolioData.filter((p) => p.featured).slice(0, 4);
 export default function Home({ onQuoteOpen }) {
   const aboutRef = useFadeIn();
   const processRef = useFadeIn();
-  const estimatorRef = useFadeIn();
   const videoRef = useFadeIn();
 
   return (
@@ -256,19 +254,20 @@ export default function Home({ onQuoteOpen }) {
 
             {/* Text */}
             <div ref={aboutRef} className="about-text fade-in">
-              <span className="text-overline">Our Story</span>
+              <span className="text-overline">About Us</span>
               <div
                 className="gold-line"
                 style={{ marginTop: "var(--space-3)" }}
               />
               <h2>
-                Crafting Spaces with <em>Soul</em>
+                Crafting Spaces{" "}
+                <br />
+                That <em>Inspire</em>
               </h2>
               <p>
-                Founded in 2016, WEAFIX STUDIOS was born from a simple belief:
-                every space has the potential to be extraordinary. We are a
-                boutique studio of passionate designers, artisans, and project
-                managers dedicated to translating your vision into reality.
+                At Weafix Studios, we believe every space has the potential to
+                inspire. Our designs combine aesthetics and functionality to
+                create interiors that are beautiful and practical.
               </p>
               <p>
                 Our approach blends international design sensibility with a deep
@@ -290,8 +289,8 @@ export default function Home({ onQuoteOpen }) {
                   </div>
                 ))}
               </div>
-              <Button variant="secondary" to="/about" arrow id="home-about-btn">
-                Our Full Story
+              <Button variant="primary" to="/about" id="home-about-btn">
+                Read More
               </Button>
             </div>
           </div>
@@ -305,27 +304,7 @@ export default function Home({ onQuoteOpen }) {
         </div>
       </section>
 
-      {/* ======== PRICE ESTIMATOR ======== */}
-      <section className="section estimator-section">
-        <div className="container">
-          <div className="section-header">
-            <span className="text-overline">
-              WEAFIX STUDIOS Price Estimator
-            </span>
-            <h2 className="text-section-title">
-              Calculate Your WEAFIX STUDIOS Cost
-            </h2>
-            <div className="section-divider" />
-            <p>
-              Select your WEAFIX STUDIOS type, kitchen & design quality to get
-              an approximate cost estimate instantly.
-            </p>
-          </div>
-          <div ref={estimatorRef} className="fade-in">
-            <PriceEstimator onQuoteOpen={onQuoteOpen} />
-          </div>
-        </div>
-      </section>
+
 
       {/* ======== PORTFOLIO TEASER ======== */}
       <section className="section portfolio-teaser">

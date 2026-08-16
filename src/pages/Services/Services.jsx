@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Button from "../../common/Button/Button";
-import CostCalculator from "./CostCalculator";
 import "./Services.css";
 
 const SERVICES = [
@@ -102,7 +101,15 @@ export default function Services({ onQuoteOpen }) {
   return (
     <main className="page-wrapper">
       {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero" style={{
+        backgroundImage: `linear-gradient(rgba(17, 17, 17, 0.3), rgba(17, 17, 17, 0.7)), url('/assets/portfolio/project-5.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        paddingTop: 'calc(var(--header-height) + var(--space-20))',
+        paddingBottom: 'var(--space-20)',
+        borderBottom: '1px solid var(--color-border)',
+        textShadow: '0 2px 10px rgba(0,0,0,0.8)'
+      }}>
         <div className="container">
           <span
             className="text-overline"
@@ -199,24 +206,6 @@ export default function Services({ onQuoteOpen }) {
         </div>
       </section>
 
-      {/* Cost Calculator */}
-      <section
-        className="section"
-        style={{ background: "var(--color-surface)" }}
-      >
-        <div className="container">
-          <div className="section-header">
-            <span className="text-overline">Estimate</span>
-            <h2 className="text-section-title">Cost Calculator</h2>
-            <div className="section-divider" />
-            <p>
-              Get a ballpark figure for your project in seconds. No commitments
-              — just clarity.
-            </p>
-          </div>
-          <CostCalculator onQuoteOpen={onQuoteOpen} />
-        </div>
-      </section>
 
       {/* CTA */}
       <section

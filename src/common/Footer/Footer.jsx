@@ -30,7 +30,7 @@ export default function Footer({ onQuoteOpen }) {
           {/* Brand */}
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
-              <img src="/assets/logo/logo.png" alt="WEAFIX STUDIOS" />
+              <img src="/assets/logo/new-logo.png" alt="WEAFIX STUDIOS" />
             </Link>
             <p className="footer-tagline">
               Crafting extraordinary living spaces with precision, passion, and

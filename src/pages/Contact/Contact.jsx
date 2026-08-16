@@ -35,7 +35,15 @@ export default function Contact() {
   return (
     <main className="page-wrapper">
       {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero" style={{
+        backgroundImage: `linear-gradient(rgba(17, 17, 17, 0.3), rgba(17, 17, 17, 0.7)), url('/assets/portfolio/project-18.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        paddingTop: 'calc(var(--header-height) + var(--space-20))',
+        paddingBottom: 'var(--space-20)',
+        borderBottom: '1px solid var(--color-border)',
+        textShadow: '0 2px 10px rgba(0,0,0,0.8)'
+      }}>
         <div className="container">
           <span
             className="text-overline"
@@ -95,9 +103,18 @@ export default function Contact() {
                         lineHeight: "var(--leading-relaxed)",
                       }}
                     >
-                      Q3, Vir Nagar Sector 8 Gurgaon, 122001, Haryana
-                      <br />
+                      WEAFIX STUDIOS, Sector 8,<br />
+                      Vir Nagar, Gurugram, Haryana 122001
                     </p>
+                    <a
+                      href="https://maps.app.goo.gl/hW3MQSmnNQpL8ZYZ9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="contact-link"
+                      style={{ fontSize: "var(--text-xs)", marginTop: 4, display: "inline-block" }}
+                    >
+                      View on Google Maps →
+                    </a>
                   </div>
                 </div>
 
@@ -105,7 +122,22 @@ export default function Contact() {
                   <div className="contact-detail-icon">📞</div>
                   <div>
                     <p style={{ fontWeight: 500, marginBottom: 2 }}>Phone</p>
-                    <a href="tel:+919876543210" className="contact-link">
+                    <a href="tel:+919811178178" className="contact-link">
+                      +91 98111 78178
+                    </a>
+                  </div>
+                </div>
+
+                <div className="contact-detail">
+                  <div className="contact-detail-icon">💬</div>
+                  <div>
+                    <p style={{ fontWeight: 500, marginBottom: 2 }}>WhatsApp</p>
+                    <a
+                      href="https://wa.me/919811178178"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="contact-link"
+                    >
                       +91 98111 78178
                     </a>
                   </div>
@@ -148,8 +180,8 @@ export default function Contact() {
               {/* Map */}
               <div className="contact-map">
                 <iframe
-                  title="WEAFIX STUDIOS Studio Map Location"
-                  src="https://maps.google.com/maps?q=Behind%20Ats%20Triputi%20Tower%2C%20Dawrka%20Expresway%2C%20Sector%20-%20104%2C%20Gurugram%20Haryana&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  title="WEAFIX STUDIOS Location — Gurugram"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.8!2d77.0179431!3d28.4576004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19d25333e285%3A0x3bb22b14b9f2254b!2sWEAFIX%20STUDIOS!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0, display: "block" }}
